@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chatroom.css"> 
-    <script src="chatroom.js"></script>
-    <title>DoggerBunch</title>
-<<<<<<< HEAD
-    <style>
+
         :root {
-            --primary-color: #152d95;
+            --primary-color: #112c83;
             --secondary-color: #921089;
             --dark-color: #2d3748;
             --light-color: #f7fafc;
@@ -18,7 +9,7 @@
         * {
             box-sizing: border-box;
             margin: 0;
-            padding: 0;
+            padding: 0; 
         }
         
         body {
@@ -217,33 +208,4 @@
                 max-width: 90%;
             }
         }
-    </style>
-=======
->>>>>>> 3b4a50c630336825e4c99cc01ade5a3891e951c3
-</head>
-<body>
-    <header>
-        <h1>DoggerBunch</h1>
-        <div class="user-info">
-            <div class="user-avatar" id="user-avatar">U</div>
-            <span id="username-display">User</span>
-            <button class="logout-btn" onclick="logout()">Logout</button>
-        </div>
-    </header>
-
-    <div class="chat-container">
-        <div class="message-list" id="message-list">
-        </div>
-    </div>
     
-    <div class="input-container">
-        <div class="tab-container">
-            <div class="tab active" onclick="switchTab('write')">Write</div>
-        </div>
-        
-        <textarea class="message-input" id="message-input" placeholder="Yap away dogger...."></textarea>
-        
-        <button class="send-btn" onclick="sendMessage()">WOOF WOOF!!! SEND</button>
-    </div>
-</body>
-</html>
