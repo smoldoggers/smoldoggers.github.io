@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fetch.js"></script>
     <title>DoggerBunch</title>
     <style>
         :root {
@@ -171,6 +172,17 @@
             font-family: 'Courier New', Courier, monospace;
             margin-bottom: 10px;
         }
+        .poke-btn {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            align-self: flex-end;
+            transition: all 0.3s ease;
+        }
         
         .send-btn {
             background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
@@ -214,6 +226,21 @@
                 max-width: 90%;
             }
         }
+
+        .btn-container{
+            font-family: 'Segoe UI', Tahoma;
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-self: flex-end;
+        }
+
+        #pokemonName{
+            font-family: 'Courier New', Courier, monospace;
+            padding-left: 8px;
+            width:200px;
+        }
+
     </style>
 </head>
 <body>
@@ -245,6 +272,7 @@
     </header>
 
     <div class="chat-container">
+        <img src="" alt="pokemon sprite" id="pokeSprite" style="display: block">
         <div class="message-list" id="message-list">
         </div>
     </div>
@@ -255,8 +283,12 @@
         </div>
         
         <textarea class="message-input" id="message-input" placeholder="Yap away dogger...."></textarea>
-        
+        <div class="btn-container">
+            <input type="text" id="pokemonName" placeholder="enter pokemon name...">
+            <button class="poke-btn" onclick="fetchData()">Pokemon</button>
         <button class="send-btn" onclick="sendMessage()">WOOF WOOF!!! SEND</button>
+        </div>
+        
     </div>
 
     <script>
