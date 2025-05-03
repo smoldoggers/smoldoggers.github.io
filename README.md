@@ -21,7 +21,7 @@ Kā lietot:
 faili:
 - chatroom.html
 - index.html
-- ReadME.txt
+- README.md
 - cursor.cur2
 - fetch.js
 
